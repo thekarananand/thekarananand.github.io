@@ -2,12 +2,56 @@
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}  
+
+.Links ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.Links img,
+.Education img {
+    width: 3ch;
+    margin-right: 1ch;
+}
+
+.Links li{
+    min-width: 30ch;
+    display: flex;
+    align-items: center;
+}
+
+.Education div {
+    width: 60ch;
+    display: flex;
+    align-items: center;
+}
+
+
+.Skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.Skills li {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 3px 5px;
 }
 
 .Google_Cloud_Skill_Badge ul {
     display: flex;
     flex-wrap: nowrap;
     overflow:auto;
+    gap: 10px;
     width: 100%;
 }
 
@@ -15,11 +59,12 @@
 .Google_Cloud_Skill_Badge li{
     display: flex;
     flex-direction: column;
-    width: 35ch;
+    width: 30ch;
     align-items: center;
+    text-align: center;
 }
 
 
 .Google_Cloud_Skill_Badge li img {
-    width: 35ch;
+    width: 30ch;
 }
