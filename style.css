@@ -1,0 +1,25 @@
+* {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.Google_Cloud_Skill_Badge ul {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow:auto;
+    width: 100%;
+}
+
+
+.Google_Cloud_Skill_Badge li{
+    display: flex;
+    flex-direction: column;
+    width: 35ch;
+    align-items: center;
+}
+
+
+.Google_Cloud_Skill_Badge li img {
+    width: 35ch;
+}
