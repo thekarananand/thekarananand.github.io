@@ -1,8 +1,34 @@
+/* Page Formatting */
+
 * {
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
+}
 
+body {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*  Appling Display:Flex  */
+
+.Links ul,
+.Links li,
+.Education .spann,
+.Education .spann_cal,
+.Skills ul,
+.Google_Cloud_Skill_Badge ul,
+.Google_Cloud_Skill_Badge li{
+    display: flex;
+}
+
+/* ----- */
+
+
+#main {
+    width: min(calc(100% - 20px), 65ch);
 }
 
 ul {
@@ -10,33 +36,44 @@ ul {
     padding: 0;
 }  
 
+
+
 .Links ul {
-    display: flex;
+
     flex-wrap: wrap;
     margin: 0;
 }
 
 .Links img,
-.Education img {
+.Education .spann_cal img {
     width: 3ch;
     margin-right: 1ch;
 }
 
 .Links li{
     min-width: 30ch;
-    display: flex;
+
     align-items: center;
 }
 
-.Education div {
-    width: 60ch;
-    display: flex;
+.Education .spann {
+
     align-items: center;
+}
+
+.Education .spann_cal {
+    width: 30ch;
+
+    align-items: center;
+}
+
+.Education .spann_marks {
+    width: fit-content;
 }
 
 
 .Skills ul {
-    display: flex;
+
     flex-wrap: wrap;
     gap: 5px;
 }
@@ -48,7 +85,7 @@ ul {
 }
 
 .Google_Cloud_Skill_Badge ul {
-    display: flex;
+
     flex-wrap: nowrap;
     overflow:auto;
     gap: 10px;
@@ -57,7 +94,7 @@ ul {
 
 
 .Google_Cloud_Skill_Badge li{
-    display: flex;
+
     flex-direction: column;
     width: 30ch;
     align-items: center;
