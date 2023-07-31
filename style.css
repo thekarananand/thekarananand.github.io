@@ -4,6 +4,7 @@
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
+    text-wrap: balance;
 }
 
 body {
@@ -50,7 +51,7 @@ h3 {
 
 
 #main {
-    width: min(calc(100% - 20px), 65ch);
+    width: min(calc(100% - 20px), 80ch);
 }
 
 ul {
@@ -61,13 +62,13 @@ ul {
 
 
 .Links ul {
-
     flex-wrap: wrap;
     margin: 0;
+    gap: 5px;
 }
 
 .Links li{
-    min-width: 30ch;
+    min-width: 26ch;
 
     align-items: center;
 }
@@ -78,7 +79,7 @@ ul {
 }
 
 .Education .spann_cal {
-    width: 30ch;
+    width: 25ch;
 
     align-items: center;
 }
