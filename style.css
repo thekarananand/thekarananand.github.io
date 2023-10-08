@@ -129,7 +129,7 @@ section {
 
 .foot {
     position: absolute;
-    top: 95vh;
+    top: 80vh;
     color: rgb(204, 173, 253);
 }
 
@@ -143,7 +143,7 @@ section {
     border-radius: 8px;
     background-color: var(--bg-3);
     width: min(calc(120ch), calc(100vw - 50px));
-    height: calc(100vh - 3px - 50px - 1rem - 50px) ;
+    height: calc(100vh - 3px - 50px - 1rem - 50px);
     top: calc(( 40px + 1rem)/2);
 }
 
@@ -169,12 +169,12 @@ section {
 }
 
 .fancy .point {
-    margin-block: 0.5rem;
+    margin-block: 0.2rem;
 }
 
 .fancy h2,
 .fancy h3 {
-    padding-top: 1rem;
+    padding-top: 0.75rem;
     padding-bottom: 0.5rem;
     font-weight: 700;
 }
@@ -182,6 +182,29 @@ section {
 .shift{
     padding-left: 2ch;
 }
+
+
+
+@media (max-width: 800px) {
+    
+    .shift_on_mobile{
+        padding-left: 2ch;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .shift_on_small_phone{
+        padding-left: 2ch;
+    }
+}
+
+@media (min-width: 550px) {
+
+    .show_on_small_phone{
+        display: none;
+    }
+} 
 
 .name{
     font-size: 1.2rem;
