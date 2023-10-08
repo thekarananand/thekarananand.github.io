@@ -1,124 +1,192 @@
-/* Page Formatting */
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&display=swap');
+@import url('CommonClassstyle.css');
+
+:root {
+    --bg-1: #161B22;
+    --bg-2: #0D1014AA;
+    --bg-3: #0A0C0F;
+    --bg-4: #010409;
+
+    --border: #30363D;
+}
 
 * {
-    font-family: 'Lato', sans-serif;
-    margin: 0;
-    padding: 0;
-    text-wrap: balance;
+    color: white;
+    font-family: 'Gabarito', cursive;
 }
 
 body {
+    height: 100vh;
+    width: 100vw;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    position: absolute;
+    width: calc(100vw - 1rem);
+    top: 0px;
+    padding: 0.5rem;
+    z-index: 10;
+}
+
+.stick{
+    background-color: var(--bg-2);
+    border-bottom: 1px solid var(--border);
+    filter: saturate(150%);
+}
+
+main{
+    background-color:  var(--bg-4);
+    height: 100%;
+    width: 100%;
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+main::-webkit-scrollbar {
+    display: none;
+}
+  
+/* Hide scrollbar for IE, Edge and Firefox */
+main{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+} 
+
+section {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-a {
-    text-decoration: none;
-    color: blue;
+.img {
+    height: 40px;
+    width: 40px;
+    border: 1px solid var(--border);
+    border-radius: 100%;
 }
 
-hr {
-    margin-block: 20px;
-    border: 0.1px solid grey;
-}
-
-h2 {
-    padding-bottom: 0.5ch;
-}
-
-h3 {
-    margin-block: 0.3ch;
-}
-
-.icons {
-    width: 2.5ch;
-    margin-right: 0.5ch;
-}
-
-/*  Appling Display:Flex  */
-
-.Links ul,
-.Links li,
-.Education .spann,
-.Education .spann_cal,
-.Skills ul,
-.Google_Cloud_Skill_Badge ul,
-.Google_Cloud_Skill_Badge li{
-    display: flex;
-}
-
-/* ----- */
-
-
-#main {
-    width: min(calc(100% - 20px), 80ch);
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}  
-
-
-
-.Links ul {
-    flex-wrap: wrap;
-    margin: 0;
-    gap: 5px;
-}
-
-.Links li{
-    min-width: 26ch;
-
-    align-items: center;
-}
-
-.Education .spann {
-
-    align-items: center;
-}
-
-.Education .spann_cal {
-    width: 25ch;
-
-    align-items: center;
-}
-
-.Education .spann_marks {
-    width: fit-content;
-}
-
-
-.Skills ul {
-
-    flex-wrap: wrap;
-    gap: 5px;
-}
-
-.Skills li {
-    border: 1px solid black;
-    border-radius: 4px;
-    padding: 3px 5px;
-}
-
-.Google_Cloud_Skill_Badge ul {
-
-    flex-wrap: nowrap;
-    overflow:auto;
-    gap: 10px;
+.img > img {
+    height: 100%;
     width: 100%;
+    border-radius: 100%;
+}
+
+.hero {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.hero > span {
+    font-size: 2.5rem;
+}
+
+.s1 {
+    position: relative;
+    display: block;
+}
+
+.gradient-container{
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    background-color: #00000000;
+}
+
+.gradient{
+    height: 100%;
+    background-image:
+    radial-gradient(at 33% 65%, hsla(256, 96%, 67%, 0.199) 0px, transparent 60%),
+    radial-gradient(at 69% 15%, hsla(209, 100%, 48%, 0.144) 0px, transparent 70%);
+    filter: blur(150px) saturate(150%);
+}
+
+.data {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    height: 100vh;
+    width: 100%;  
+}
+
+.pattern {
+    height: 100vh;
+    width: 100%;  
+    position: absolute;
+    background-size: 40px;
+    opacity: 0.15;
+    top: 0;
+    z-index: 2;
+    background-image: url(Assets/pattern.png);
+}
+
+.foot {
+    position: absolute;
+    top: 95vh;
+    color: rgb(204, 173, 253);
+}
+
+.foot > .material-symbols-outlined {
+    color: rgb(204, 173, 253);
+}
+
+.terminal{
+    position: relative;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background-color: var(--bg-3);
+    width: min(calc(120ch), calc(100vw - 50px));
+    height: calc(100vh - 3px - 50px - 1rem - 50px) ;
+    top: calc(( 40px + 1rem)/2);
+}
+
+.heading {
+    height: 40px;
+    border-bottom: 1px solid var(--border);
+    background-color: var(--bg-1);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.body {
+    padding: 10px;
+}
+
+.terminal .heading h1 {
+    font-size: 1rem;
 }
 
 
-.Google_Cloud_Skill_Badge li{
-
-    flex-direction: column;
-    width: 30ch;
-    align-items: center;
-    text-align: center;
+.fancy .mono {
+    line-height: 1.3rem;
 }
 
+.fancy .point {
+    margin-block: 0.5rem;
+}
 
-.Google_Cloud_Skill_Badge li img {
-    width: 30ch;
+.fancy h2,
+.fancy h3 {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.shift{
+    padding-left: 2ch;
+}
+
+.name{
+    font-size: 1.2rem;
+}
+
+header .mono{
+    font-size: 0.8rem;
 }

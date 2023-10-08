@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 400;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-v {
+    display: flex;
+    flex-direction: column;
+}
+
+.jcc {
+    justify-content: center;
+}
+
+.jcsa {
+    justify-content: space-around;
+}
+.jcsa {
+    justify-content: space-between;
+}
+
+.aic {
+    align-items: center;
+}
+
+.mono {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.gap-5px{
+    gap: 5px;
+}
+
+.gap-10px{
+    gap: 10px;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.relative{
+    position: relative;
+}
+
+.z-1{
+    z-index: 1;
+}
+.z-3{
+    z-index: 3;
+}
+
+.top-0{
+    top: 0;
+}
+.w-full{
+    width: 100vw;
+}
+.h-full{
+    height: 100vh;
+}
+
+@media (min-width: 800px) {
+    .hidden_on_pc {
+        display: none;
+    }
+}
+
+.t-green-bold {
+    color: rgb(41, 255, 41);
+    text-decoration: bold;
+    font-family: 'JetBrains Mono', monospace;
+}
