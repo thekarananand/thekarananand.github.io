@@ -68,7 +68,7 @@
     width: 100vw;
 }
 .h-full{
-    height: 100vh;
+    height: 100svh;
 }
 
 @media (min-width: 800px) {
