@@ -1,0 +1,36 @@
+
+header {
+    position: absolute;
+    width: calc(100vw - 1rem);
+    top: 0px;
+    padding: 0.5rem;
+    z-index: 10;
+}
+
+.header_bg{
+    background-color: var(--bg-2);
+    border-bottom: 1px solid var(--border);
+    filter: saturate(150%);
+}
+
+.img {
+    height: 2.7rem;
+    width: 2.7rem;
+    border: 1px solid var(--border);
+    border-radius: 100%;
+}
+
+.img > img {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+
+header .name {
+    font-size: 1.2rem;
+}
+
+header .mono {
+    font-size: 0.8rem;
+}
+

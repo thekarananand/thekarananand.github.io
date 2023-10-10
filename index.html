@@ -1,140 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karan Anand</title>
-    <link rel="stylesheet" href="style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Karan Anand</title>
+        <link rel="stylesheet" href="style.css">
 
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    </head>
+    <body>
 
-</head>
-<body>
+        <header class="header_bg">
 
-    <header class="stick">
+            <div class="brand flex aic gap-10px">
 
-        <div class="brand flex gap-10px">
-        
-            <div class="img">
-                <img src="Assets/Profile.jpeg" alt="Karan Anand's Photo">
+                <div class="img">
+                    <img src="Assets/Profile.jpeg" alt="Karan Anand's Photo">
+                </div>
+                <div class="flex-v">
+                    <div class="name">Karan Anand</div>
+                    <div class="mono">@thekarananand</div>
+                </div>
+
             </div>
-            <div class="flex-v">
-                <div class="name">Karan Anand</div>
-                <div class="mono">@thekarananand</div>
-            </div>
 
-        </div>
+            <nav></nav>
+        </header>
 
-        <nav></nav>
-    </header>
-
-    <main>
-        <section class="s1">
-
-            <div class="gradient-container">
-                <div class="gradient"></div>
-                <div class="data flex aic jcc">
-                    <h1 class="hero">
+        <main>
+            <section id="home_section">
+                <div class="gradient g1 z-2"></div>
+                <div class="gradient dots z-3"></div>
+                <div class="data">
+                    <h1>
                         Hi, I am <br class="hidden_on_pc">
                         Karan Anand, <br>
                         <span>& </span>This is <br class="hidden_on_pc">
                         My Portfolio!
                     </h1>
 
-                    <p class="flex jcc aic gap-5px foot" >
-                        <span class="material-symbols-outlined">
-                            expand_circle_down
-                        </span>
-                        Swipe/Scroll to Explore more!
+                    <p class="absolute">
+                        <a href="#about_section" class="flex gap-5px aic">
+                            <span class="material-symbols-outlined">
+                                expand_circle_down
+                            </span>
+                            Swipe/Scroll to Explore more!
+
+                        </a>
                     </p>
                 </div>
-            </div>
+            </section>
 
-        </section>
-        <section>
-            <div class="gradient-container">
-                <div class="pattern"></div>
-                <div class="data flex aic jcc">
-                    <div class="terminal flex-v">
-                        <div class="heading flex jcc aic">
-                            <h1>Terminal</h1>
+            <section id="about_section">
+                <div class="gradient g2 z-2"></div>
+                
+                <div class="data">
+                    <div class="terminal absolute">
+                        <div class="t-head relative flex aic jcc">
+                            <div class="button absolute flex aic jcc gap-10px">
+                                <div></div> <div></div> <div></div>
+                            </div>
+                            <div>Terminal</div>
                         </div>
-                        <div class="body relative">
+                        <div class="t-body">
                             <div class="mono">
-                                <span class="t-green-bold">thekarananand</span>@<span class="t-green-bold">your-browser</span>:~$ whoami
+                                <span class="t-text-green-bold">thekarananand</span>@<span class="t-text-green-bold">browser</span>:~$ whoami <br>
                             </div>
-                            <div class="fancy">
+                            <div class="focus">
+
+                                <h1>👨‍💻 Karan Anand</h1>
+                                <p> An <b>Aspiring DevOps & Cloud Engineer</b>,<br>
+                                    with a little touch on WebDev 🌐
+                                </p>
+
+                                <h2>Education 🎓</h2>
+
+                                    <ul>
+                                        <li>
+                                            <b>Bachelors of Technology</b><br>
+                                            National Institute of Technology, Jalandhar. <br>
+                                            <!-- 🗓️ Nov 21 - July 25 (tentative) -->
+                                        </li>
+                                    </ul>
                                 
-                                <h2 class="mono">👨‍💻 KARAN ANAND</h2>
+
+                                <h2>Achievements 🏆</h2> 
+
+
+                                <ul>
+                                    <li>
+                                        <b>🥇 Winner,</b> Ideathon’23
+                                    </li>
+                                    <li>
+                                        <b>👨‍💻 Top 5 Finalist,</b> HackMol 4.0
+                                    </li>
+                                </ul>
+
+                                <h2>Volunteering Positions 🤝</h2> 
+
+                                <ul>
+                                    <li>
+                                        <b>Lead, DevOps Team 👥,</b><br> GDSC, NIT Jalandhar
+                                    </li>
+                                    <li>
+                                        <b>Cisco Campus Ambassador FY’24 💻</b><br> Cisco, India.
+                                    </li>
+                                    <li>
+                                        <b>Core Member, WebDev Team 🌐</b><br> SPICE, NIT Jalandhar
+                                    </li>
+                                </ul>
                                 
-                                <div class="mono">
-                                An Aspiring DevOps & Cloud 
-                                Engineer, with a little 
-                                touch on WebDev🌐
-                                </div>
-                        
-                                <h3 class="mono">EDUCATION 🎓</h3>
-                                <div class="point">
-                                <span class="mono  bold">- B. Tech. <br class="hidden_on_pc">
-                                  <span class="mono shift_on_mobile bold">(Instrumentation & Control <br class="show_on_small_phone"> <span class="mono shift_on_small_phone bold">Engineering)</span></span></span><br>
-                                  <span class="mono shift">NIT Jalandhar.</span></span><br>
-                                  <span class="mono shift">Nov 21 - Present</span>
-                                </div>
-
-                                <h3 class="mono">ACHIEVEMENTS 🏆</h3>
-                                
-                                <div class="point mono">
-                                - 🥇 Winner, Ideathon’23 
-                                </div>
-
-                                <div class="point mono">
-                                - 🔝 Top 5 Finalist, HackMol 4.0 <br>
-                                </div>
-
-                                <div class="point mono">
-                                - 🌟 Represented NIT Jalandhar <br>
-                                <span class="mono shift">at Cognizance’23, IIT Roorkee 🚀</span>
-                                </div>
-                            
-                                  <h3 class="mono">VOLUNTEERING POSITIONS 🤝</h3>
-
-                                    <div class="point mono">
-                                    - <span class="mono bold">Lead, DevOps Team 👥<br></span>
-                                    <span class="mono shift">GDSC, NIT Jalandhar<br></span>
-                                    </div>
-
-                                    <div class="point mono">
-                                    - <span class="mono bold">Cisco Campus Ambassador FY’24 💻 <br></span>
-                                    <span class="mono shift">Cisco, India. <br></span>
-                                    </div>
-
-                                    <div class="point mono">
-                                    - <span class="mono bold">Core Member, WebDev Team 🌐<br></span>
-                                    <span class="mono shift">SPICE, NIT Jalandhar<br></span>
-                                    </div>
-
                             </div>
                         </div>
-
                     </div>
-
                 </div>
-            </div>
+            </section>
 
-        </section>
-        <section>
-            <h1>Projects</h1>
-        </section>
-        <section>
-            <h1>Skills</h1>
-        </section>
-        <section>
-            <h1>and, Soo... Many Google Cloud Skill Badges!</h1>
-        </section>
-        <section>
-            <h1>Impressed? Reach out!...</h1>
-        </section>
-    </main>
-</body>
+            <section id="project_section">
+                <div class="gradient g3 z-2"></div>
+                <div class="gradient dots z-3"></div>
+                <div class="data">
+                    <div class="starting_tag mono">
+                        &lt;projects&gt;
+                    </div>
+                    <div class="project_list">
+                        <ul class="flex-v gap-20px">
+                            <li>
+                                <div>
+                                    <h2>WikiNetes</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sapiente laborum et, voluptates ea molestiae excepturi error delectus adipisci voluptatibus ut tempora quis? Placeat dignissimos eius quasi temporibus cupiditate. Est.</p>
+                                </div>
+                                <a href=""><img src="Assets/github-mark-white.svg" alt="GitHub"></a>
+                            </li>
+                            <li>
+                                <div>
+                                    <h2>Ubuntu Spinner</h2>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo excepturi expedita rerum culpa. Asperiores voluptate molestias quos a necessitatibus, adipisci quaerat eius officia assumenda magni expedita nemo error laborum eligendi!</p>
+                                </div>
+                                <a href=""><img src="Assets/github-mark-white.svg" alt="GitHub"></a>
+                            </li>
+                            <li>
+                                <div>
+                                    <h2>E2A Conference Webpage</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, odit sint. Laudantium voluptate voluptas distinctio minus libero, molestiae, sed corrupti doloremque quaerat tenetur porro illo in inventore? Dolorum, incidunt aut.</p>
+                                </div>
+                                <a href=""><img src="Assets/github-mark-white.svg" alt="GitHub"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ending_tag mono">
+                        &lt;/projects&gt;
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="gradient"></div>
+                <div class="data">
+                    <h1>Skills</h1>
+                </div>
+            </section>
+            <section>
+                <div class="gradient"></div>
+                <div class="data">
+                    <h1>and, Soo... Many Google Cloud Skill Badges!</h1>
+                </div>
+            </section>
+            <section>
+                <div class="gradient"></div>
+                <div class="data">
+                    <h1>Impressed? Reach out!...</h1>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>

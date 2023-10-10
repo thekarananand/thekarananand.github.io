@@ -1,0 +1,27 @@
+.g1{
+    background-image:
+    radial-gradient(at 33% 35%, hsla(281, 96%, 67%, 0.199) 0px, transparent 60%),
+    radial-gradient(at 69% 55%, hsla(209, 100%, 48%, 0.144) 0px, transparent 70%);
+    filter: blur(200px) saturate(150%);
+}
+
+.g2{
+    background-image:
+    radial-gradient(at 33% 55%, hsla(261, 96%, 67%, 0.1) 0px, transparent 70%),
+    radial-gradient(at 100% 100%, hsla(236, 87%, 76%, 0.2) 0px, transparent 40%),
+    radial-gradient(at 0% 0%, hsla(152, 97%, 34%, 0.2) 0px, transparent 70%);
+    filter: blur(200px) saturate(150%);
+}
+
+.g3{
+    background-image:
+    radial-gradient(at 100% 0%, hsla(236, 87%, 76%, 0.25) 0px, transparent 70%),
+    radial-gradient(at 0% 100%, hsla(276, 100%, 29%, 0.2) 0px, transparent 70%);
+    filter: blur(200px) saturate(150%);
+}
+
+.dots{
+    background-size: 20px;
+    opacity: 0.15;
+    background-image: url(../Assets/pattern.png);
+}
