@@ -120,6 +120,7 @@ section > .gradient{
     width: 100%;
     border: 2px solid var(--border);
     border-radius: 10px;
+    background-color: var(--bg-4);
 }
 
 #about_section .terminal .t-head {
@@ -151,8 +152,8 @@ section > .gradient{
 
 
 #about_section .terminal .t-body {
-    background-color: var(--bg-4);
-    height: calc(100% - 2.5rem - 20px);
+    
+    height: calc(100% - 2.5rem - 20px - 1px);
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     padding: 10px;
@@ -314,14 +315,8 @@ section > .gradient{
 }
 
 @media (min-width: 401px) {
-    .hidden_on_la{
+    .hidden_on_larger{
         display: none;
-        font-size: 0px;
-        line-height: 0px;
     }
 }
 
-/* 
-#project_sections .project_list{
-
-} */
