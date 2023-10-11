@@ -126,7 +126,7 @@ section > .gradient{
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     background-color: var(--bg-1);
-    /* border-bottom: 2px solid var(--border); */
+    border-bottom: 2px solid var(--border);
     height: 2.5rem;
     font-size: 1rem;
 }
@@ -156,7 +156,7 @@ section > .gradient{
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     padding: 10px;
-    overflow: scroll;
+    overflow: auto;
 }
 
 #about_section .terminal .t-body .t-text-green-bold {
@@ -238,7 +238,7 @@ section > .gradient{
 } */
 
 :root{
-    --accent: #8E95F7;
+    --accent: #9fa4ee;
 }
 
 #project_section .starting_tag,
@@ -286,14 +286,18 @@ section > .gradient{
     padding-block: 0.5rem;
 }
 
+#project_section .project_list ul li p span{
+    color: var(--text-2);
+}
+
 #project_section .project_list ul li a{
     position: absolute;
-    top: calc(100% - 2rem - 12px);
-    left: calc(100% - 2rem - 12px);
+    top: calc( 12px);
+    left: calc(100% - 1.6rem - 12px);
 }
 
 #project_section .project_list ul li a img{
-    height: 2rem;
+    height: 1.6rem;
 }
 
 #project_section .project_list ul li h2{
@@ -301,7 +305,21 @@ section > .gradient{
     font-size: 1.2rem;
 }
 
+@media (max-width: 400px) {
+    .hidden_on_phone{
+        display: none;
+        font-size: 0px;
+        line-height: 0px;
+    }
+}
 
+@media (min-width: 401px) {
+    .hidden_on_la{
+        display: none;
+        font-size: 0px;
+        line-height: 0px;
+    }
+}
 
 /* 
 #project_sections .project_list{
