@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 50 50"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="cplusplus.svg"
+   width="50"
+   height="50"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="6.4296875"
+     inkscape:cx="-4.0437424"
+     inkscape:cy="37.249089"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4">
+    <sodipodi:guide
+       position="0,50"
+       orientation="0,50"
+       id="guide4"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="50,50"
+       orientation="50,0"
+       id="guide5"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="50,0"
+       orientation="0,-50"
+       id="guide6"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="0,0"
+       orientation="-50,0"
+       id="guide7"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <path
+     fill="#ffffff"
+     d="m 35.014682,30.770364 c -2.002936,3.528983 -5.818053,5.91343 -10.157748,5.91343 -6.438009,0 -11.683794,-5.245785 -11.683794,-11.683794 0,-6.438009 5.245785,-11.683794 11.683794,-11.683794 4.339695,0 8.154812,2.384447 10.157748,5.961119 l 6.199564,-3.576672 C 37.971397,10.025668 31.86721,6.1628626 24.856934,6.1628626 14.460741,6.1628626 6.0197962,14.603808 6.0197962,25 c 0,10.396193 8.4409448,18.837138 18.8371378,18.837138 6.962587,0 13.066774,-3.815117 16.309623,-9.442413 z"
+     id="path3"
+     style="stroke-width:0.47689" />
+  <path
+     d="m 33.488635,23.950843 h 2.479826 v -2.527515 h 2.098314 v 2.527515 h 2.527515 v 2.098315 h -2.527515 v 2.479826 h -2.098314 v -2.479826 h -2.479826 z m 8.822456,0 h 2.479826 v -2.527515 h 2.098315 v 2.527515 h 2.527515 v 2.098315 h -2.527515 v 2.479826 h -2.098315 v -2.479826 h -2.479826 z"
+     fill="#ffffff"
+     id="path4"
+     style="stroke-width:0.47689" />
+</svg>

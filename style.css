@@ -167,11 +167,6 @@ section > .gradient{
 
 
 
-#about_section .terminal .t-body .mono {
-    font-weight: 500;
-    font-size: 1.3rem;
-}
-
 #about_section .terminal .t-body .focus * {
     color: var(--text-2);
     font-weight: 500;
@@ -183,62 +178,58 @@ section > .gradient{
     color: white;
 }
 
-#about_section .terminal .t-body .focus h1{
-    font-size: 2.0rem;
-    padding-top: 0.6rem;
-    padding-bottom: 0.3rem;
+#about_section {
+    --m : 1.3;
 }
 
-#about_section .terminal .t-body .focus h2{
-    font-size: 1.6rem;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
+@media (max-width: 520px) {
+    #about_section {
+        --m : 1.2;
+    }
 }
 
-#about_section .terminal .t-body .focus p,
-#about_section .terminal .t-body .focus li{
-    font-size: 1.3rem;
-    padding-block: 0.3rem;
+@media (max-width: 470px) {
+    #about_section {
+        --m : 1.1;
+    }
+}
+
+@media (max-width: 430px) {
+    #about_section {
+        --m : 1.0;
+    }
 }
 
 #about_section .terminal .t-body .focus ul{
     padding-left: calc(10px + 1ch);
 }
 
-@media (max-width: 550px) {
-
-    #about_section .terminal .t-body .mono {
-        font-weight: 500;
-        font-size: 1.0rem;
-    }
-
-    #about_section .terminal .t-body .focus h1{
-        font-size: 1.4rem;
-        padding-top: 0.6rem;
-        padding-bottom: 0.3rem;
-    }
-
-    #about_section .terminal .t-body .focus h2{
-        font-size: 1.2rem;
-        padding-top: 0.3rem;
-        padding-bottom: 0.3rem;
-    }
-
-    #about_section .terminal .t-body .focus p,
-    #about_section .terminal .t-body .focus li{
-        font-size: 1rem;
-        padding-block: 0.3rem;
-    }
+#about_section .terminal .t-body .mono {
+    font-weight: 500;
+    font-size: calc(1.0rem * var(--m));
 }
 
+#about_section .terminal .t-body .focus h1{
+    font-size: calc(1.4rem * var(--m));
+    padding-top: calc(.6rem * var(--m) * 1.2);
+    padding-bottom: calc(.3rem * var(--m) * 1.2);
+}
+
+#about_section .terminal .t-body .focus h2{
+    font-size: calc(1.2rem * var(--m));
+    padding-top: calc(.3rem * var(--m) * 1.2);
+    padding-bottom: calc(.3rem * var(--m) * 1.2);
+}
+
+#about_section .terminal .t-body .focus p,
+#about_section .terminal .t-body .focus li{
+    font-size: calc(1rem * var(--m));
+    padding-block: calc(.3rem * var(--m) * 1.2);
+}
 
 /* ---------------------------- Project Section ---------------------------- */
 
-/* #project_section * {
-    
-} */
-
-:root{
+#project_section {
     --accent: #9fa4ee;
 }
 
@@ -259,6 +250,7 @@ section > .gradient{
 
     width: calc(100% - 6ch);
     border-left: 1px solid var(--accent);
+    overflow: auto;
 }
 
 #project_section .project_list ul{
@@ -319,4 +311,92 @@ section > .gradient{
         display: none;
     }
 }
+
+
+/* ---------------------------- Skills Section ---------------------------- */
+
+#skills_section .data .big_wrapper {
+    width: 100%;
+}
+
+#skills_section .data .big_wrapper .wrapper:nth-of-type(2) article {
+    width: calc((100% - 20px - 2px) / 2 );
+}
+
+#skills_section .data .big_wrapper article {
+    border: 2px solid var(--border);
+    padding: 12px;
+    border-radius: 10px;
+}
+
+#skills_section .data .big_wrapper article h3 {
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding-bottom: 12px;
+}
+
+#skills_section .data .big_wrapper article ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+#skills_section .data .big_wrapper article ul li{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid var(--border);
+    padding: 0.2rem;
+    border-radius: 2rem;
+    
+}
+
+#skills_section .data .big_wrapper article ul li p{
+    font-size: 1.2rem;
+    padding-right: 0.6rem;
+}
+
+#skills_section .data .big_wrapper article ul img {
+    background-color: var(--bg-1);
+    padding: 0.3rem;
+    height: 1.6rem;
+    width: 1.6rem;
+    border-radius: 100%;
+}
+
+
+
+
+/* ---------------------------- Skill Badges Section ---------------------------- */
+
+/* #skill_badges_section .data{ border: 2px dashed green; }
+
+#skill_badges_section {
+    --badge_width: calc( (120ch - 40px) / 3);
+}
+ 
+@media (max-width: calc(120ch + 50px)) {
+    #skill_badges_section {
+        --badge_width: calc( (1100px - 40px) / 2);
+    }
+}
+
+#skill_badges_section ul {
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+#skill_badges_section h1 {
+    padding-bottom: 25px;
+}
+
+#skill_badges_section ul li {
+    max-width: var(--badge_width);
+}
+
+#skill_badges_section ul li img {
+    width: 100%;
+    border-radius: 1ch;
+} */
 
